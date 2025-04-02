@@ -10,6 +10,9 @@
       href="https://unpkg.com/reveal.js/dist/theme/black.css"
       id="theme"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css"/>
     <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   </head>
@@ -27,31 +30,45 @@
           <!-- Kapitel: Oszilloskope früher: -->
           <section>
             <section>
-              <h2>Oszilloskope früher</h2>
+              <h2>1897 erfunden – aber kaum genutzt ?</h2>
               <p>
-                Seit 1897 in Betrieb und doch kaum im Alltag vertreten, weshalb?
+                Die Herausforderungen der Oszilloskopdiagnose
               </p>
-              <img src="images/OsziAlt.png" alt="Altes analog Oszilloskop" />
             </section>
             <section>
-              <h2>Nachteile an alten Oszilloskopen</h2>
+              <h2>1 : Physische Hürden</h2>
+              <p><strong>Groß, empfindlich, unflexibel</strong></p>
+              <div style="display: flex; align-items: center; gap: 2rem;">
+                <!-- Linke Seite: Faktenbox -->
+                <div style="flex: 1;">
+                  <ul>
+                    <li><strong>Größe:</strong> ~1 kg, 23 × 16 × 6 cm</li>
+                    <li><strong>Empfindlich:</strong> Wasser, Schmutz, Stöße</li>
+                    <li><strong>Unflexibel:</strong> Ein Gerät -> Ein Einsatzort</li>
+                  </ul>
+                </div>
+            
+                <!-- Rechte Seite: Bild -->
+                <div style="flex: 1; text-align: center;">
+                  <img src="images/OsziKI.png" alt="Altes Oszilloskop" style="max-height: 300px; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.2);" />
+                </div>
+              </div>
+            </section>
+            <section>
+              <h2>2 : Bedienbarkeit</h2>
+              <p><strong>Ein Gerät für Experten - und was macht der Rest ?</strong></p>
               <ul>
-                <li>Groß, schwer, sperrig</li>
-                <li>Komplizierte Bedienung, Triggereinstellung: ein Muss</li>
-                <li>Keine digitale Datenspeicherung</li>
-                <li>Schnell kaputt</li>
+                <li>Komplexe Bedienoberfläche </li>
+                <li>Triggereinstellung: ein Muss</li>
+                <li>Keine/schwierige digitale Datenspeicherung/anzeige</li>
               </ul>
             </section>
             <section>
-              <h2></h2>
+              <h2>3 : Diagnose</h2>
               <ul>
-                <li>Aufwendige Diagnose – Kein direkter Datenexport möglich</li>
-                <li>
-                  Keine Analyse-Software – Keine moderne Schnittstelle zur
-                  Auswertung
-                </li>
-                <li>Daten können nicht wieder aufgerufen werden</li>
                 <li>Hohes Maß an Vorkenntnissen nötig</li>
+                <li>Wenig freie Informationsquellen vorhanden</li>
+                <li>Kein direkter Export -> Keine Präsentation für den Kunden</li>
               </ul>
             </section>
           </section>
@@ -88,12 +105,12 @@
                 />
                 <img
                   class="slide slide-image-RawImages"
-                  src="images/Oszilloskop_Produktfoto_Freigestellt_schraeg_Oben.png"
+                  src="images/OmnAIScopeKoffer.jpg"
                   alt="OmnAIScope Oszilloskop"
                 />
                 <img
                   class="slide slide-image-RawImages"
-                  src="images/OmnAIScope_USB_Kabel_1.jpg"
+                  src="images/OmnAIAuto1.jpg"
                   alt="OmnAIScope Oszilloskop"
                 />
               </div>
@@ -102,7 +119,7 @@
             </div>
           </section>
           <section>
-            <h2>Der Unterschied zu früher</h2>
+            <h2>Die Lösung der Oszilloskop Herausforderungen</h2>
             <div class="slider-container">
               <div class="slider">
                 <!-- Slide 1 -->
@@ -250,67 +267,6 @@
           <section>
             <h2>Technische Daten</h2>
             <img src="images/TechDatenOmnAI.png" />
-          </section>
-        </section>
-
-        <!-- Das Problem mit der Fahrzeuganalyse: -->
-        <section>
-          <section data-transition="zoom">
-            <h2>Warum Analyse direkt am Motor?</h2>
-            <p>Das Problem mit der aktuellen Fahrzeuganalyse</p>
-          </section>
-          <section>
-            <h2>Der aktuelle Diagnoseprozess</h2>
-            <p>Fehlercodes geben nur einen groben Rahmen wo der Fehler liegt</p>
-            <div style="width: 100%; height: 400px; overflow: auto; border: 1px solid #ccc; padding: 10px;background: #f8f9fa;">
-              <div class="mermaid">
-                graph TD;
-                    A[Kunde kommt mit defektem Auto] --> B[Werkstatt liest Fehlercode aus];
-                    B --> C{Möglichkeiten};
-                    C -->|Teil austauschen| D[Hoher Kostenaufwand];
-                    D --> E[1 Woche später - Fehler nicht behoben];
-                    E --> F[Kunde unzufrieden];
-                    F --> A;
-                    
-                    classDef error fill:#D9534F,stroke:#fff,stroke-width:2px,color:#fff;
-                    classDef warning fill:#F0AD4E,stroke:#fff,stroke-width:2px,color:#fff;
-
-                    class D error;
-                    class E error;
-                    class F error;
-                    class C warning;
-              </div>
-            </div>
-          </section>
-
-          <section>
-            <h2>Der verbesserte Diagnoseprozess</h2>
-            <div style="width: 100%; height: 400px;overflow: auto;border: 1px solid #ccc;padding: 10px;background: #f8f9fa;">
-            <div class="mermaid">
-                graph TD;
-                    A[Kunde kommt mit defektem Auto] --> B[Werkstatt liest Fehlercode aus];
-                    B --> C{Möglichkeiten};
-                    C -->|Teil austauschen| D[Hoher Kostenaufwand];
-                    D --> E[1 Woche später - Fehler nicht behoben];
-                    E --> F[Kunde unzufrieden];
-                    F --> A;
-                    
-                    C -->|Fehleranalyse| G[Werkstattmitarbeiter findet exakten Fehler];
-                    G --> H[Er tauscht oder repariert das richtige Teil];
-                    H --> I[Fehler überprüfbar];
-                    I --> J[Einmalige geringere Ausgaben];
-                    J --> K[Zufriedener Kunde];
-
-                    classDef success fill:#44AA44,stroke:#fff,stroke-width:2px,color:#fff;
-                    classDef process fill:#007BFF,stroke:#fff,stroke-width:2px,color:#fff;
-
-                    class G process;
-                    class H process;
-                    class I success;
-                    class J success;
-                    class K success;
-                </div>
-            </div>
           </section>
         </section>
 
@@ -471,7 +427,7 @@
           </section>
           <section>
             <h2> Verkaufsberatung </h2>
-             unter  +49 234 585 458 13
+             <div style="color: black;">unter  +49 234 585 458 13</div>
           </section>
           <section class="partners">
             <h2>OmnAIScope Händler</h2>
@@ -530,127 +486,6 @@
             </div>
           </section>
       </section>
-      <section>
-        <section>
-          <h2>Unsere Angebote</h2>
-          <p>Werden auch Sie OmnAIScope Händler</p>
-        </section>
-        <section class="product-slide">
-          <div class="product">
-            <!-- Linker Bereich: Bild -->
-            <div class="product-image">
-              <img src="images/WerkstattkofferLight.jpg" alt="OmnAIScope-Koffer Light">
-            </div>
-            <!-- Rechter Bereich: Text -->
-            <div class="product-text">
-              <h3>OmnAIScope-Koffer Light</h3>
-              <p><strong>UVP:</strong> 195,00€</p>
-              <p style="font-size:0.6em;">Lieferumfang: </p>
-              <ul>
-                <li>1 x OmnAIScope</li>
-                <li>1 x BNC zu Banane Adapter</li>
-                <li>1 x USB-C zu USB-A Kabel</li>
-                <li>1 x Koffer</li>
-              </ul>
-              <p><strong>Zielgruppe:</strong> Einsteiger, Hobbybastler</p>
-            </div>
-          </div>
-        </section>
-        <section class="product-slide">
-          <div class="product">
-            <!-- Linker Bereich: Bild -->
-            <div class="product-image">
-              <img src="images/OmnAIScopeKoffer.jpg" alt="Werkstattkoffer Basic Bild">
-            </div>
-            <!-- Rechter Bereich: Text -->
-            <div class="product-text">
-              <h3>OmnAIScope Werkstattkoffer Basic</h3>
-              <p><strong>UVP:</strong> 220,65€</p>
-              <p style="font-size:0.6em;">Lieferumfang: </p>
-              <ul>
-                <li>1 x OmnAIScope</li>
-                <li>2 x Laborkabel</li>
-                <li>2 x Messpitzen</li>
-                <li>2 x Stechklemmen</li>
-                <li>1 x BNC zu Banane Adapter</li>
-                <li>1 x USB-C zu USB-A Kabel</li>
-                <li>1 x Koffer</li>
-              </ul>
-              <p><strong>Zielgruppe:</strong> Einsteiger, Hobbybastler, KFZ-Betriebe</p>
-            </div>
-          </div>
-        </section>
-
-        <section class="product-slide">
-          <div class="product">
-            <!-- Linker Bereich: Bild -->
-            <div class="product-image">
-              <img src="images/WerkstattKoffeDuo.jpg" alt="Werkstattkoffer Duo Bild">
-            </div>
-            <!-- Rechter Bereich: Text -->
-            <div class="product-text">
-              <h3>OmnAIScope Werkstattkoffer Basic Duo </h3>
-              <p><strong>UVP:</strong> 394,99€</p>
-              <p style="font-size:0.6em;">Lieferumfang: </p>
-              <ul>
-                <li>2 x OmnAIScope</li>
-                <li>4 x Laborkabel</li>
-                <li>4 x Messpitzen</li>
-                <li>4 x Stechklemmen</li>
-                <li>2 x BNC zu Banane Adapter</li>
-                <li>2 x USB-C zu USB-A Kabel</li>
-                <li>1 x Koffer</li>
-              </ul>
-              <p><strong>Zielgruppe:</strong> Einsteiger, Hobbybastler, KFZ-Betriebe</p>
-            </div>
-          </div>
-        </section>
-          <section>
-            <h2>Händlerpreise & Staffelpreise</h2>
-            <p>Die folgenden Staffelpreise gelten für Händler, abhängig von der bestellten Menge:</p>
-            <ul>
-              <li><strong>1–10 Stück:</strong> 70 % des UVP</li>
-              <li><strong>11–50 Stück:</strong> 65 % des UVP</li>
-              <li><strong>51–100 Stück:</strong> 60 % des UVP</li>
-              <li><strong>Über 100 Stück:</strong> 55 % des UVP</li>
-            </ul>
-          </section>
-          <section>
-            <table>
-              <thead>
-                <tr>
-                  <th>Empfohlener Endkundenpreis</th>
-                  <th>1–10 Stück (70 %)</th>
-                  <th>11–50 Stück (65 %)</th>
-                  <th>51–100 Stück (60 %)</th>
-                  <th>Über 100 Stück (55 %)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>195,00 €</td>
-                  <td>136,50 €</td>
-                  <td>126,75 €</td>
-                  <td>117,00 €</td>
-                  <td>107,25 €</td>
-                </tr>
-                <tr>
-                  <td>220,65 €</td>
-                  <td>154,46 €</td>
-                  <td>143,42 €</td>
-                  <td>132,39 €</td>
-                  <td>121,36 €</td>
-                </tr>
-                <tr>
-                  <td>394,99 €</td>
-                  <td>276,50 €</td>
-                  <td>256,74 €</td>
-                  <td>236,99 €</td>
-                  <td>217,24 €</td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
       <!-- <section class="product-slide">
           <div class="product">
             <div class="product-image">
@@ -716,6 +551,67 @@
         </div>
       </div>
     </section>
+
+      <!-- Das Problem mit der Fahrzeuganalyse: -->
+      <section>
+        <section data-transition="zoom">
+          <h2>Warum Analyse direkt am Motor?</h2>
+          <p>Das Problem mit der aktuellen Fahrzeuganalyse</p>
+        </section>
+        <section>
+          <h2>Der aktuelle Diagnoseprozess</h2>
+          <p>Fehlercodes geben nur einen groben Rahmen wo der Fehler liegt</p>
+          <div style="width: 100%; height: 400px; overflow: auto; border: 1px solid #ccc; padding: 10px;background: #f8f9fa;">
+            <div class="mermaid">
+              graph TD;
+                  A[Kunde kommt mit defektem Auto] --> B[Werkstatt liest Fehlercode aus];
+                  B --> C{Möglichkeiten};
+                  C -->|Teil austauschen| D[Hoher Kostenaufwand];
+                  D --> E[1 Woche später - Fehler nicht behoben];
+                  E --> F[Kunde unzufrieden];
+                  F --> A;
+                  
+                  classDef error fill:#D9534F,stroke:#fff,stroke-width:2px,color:#fff;
+                  classDef warning fill:#F0AD4E,stroke:#fff,stroke-width:2px,color:#fff;
+
+                  class D error;
+                  class E error;
+                  class F error;
+                  class C warning;
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Der verbesserte Diagnoseprozess</h2>
+          <div style="width: 100%; height: 400px;overflow: auto;border: 1px solid #ccc;padding: 10px;background: #f8f9fa;">
+          <div class="mermaid">
+              graph TD;
+                  A[Kunde kommt mit defektem Auto] --> B[Werkstatt liest Fehlercode aus];
+                  B --> C{Möglichkeiten};
+                  C -->|Teil austauschen| D[Hoher Kostenaufwand];
+                  D --> E[1 Woche später - Fehler nicht behoben];
+                  E --> F[Kunde unzufrieden];
+                  F --> A;
+                  
+                  C -->|Fehleranalyse| G[Werkstattmitarbeiter findet exakten Fehler];
+                  G --> H[Er tauscht oder repariert das richtige Teil];
+                  H --> I[Fehler überprüfbar];
+                  I --> J[Einmalige geringere Ausgaben];
+                  J --> K[Zufriedener Kunde];
+
+                  classDef success fill:#44AA44,stroke:#fff,stroke-width:2px,color:#fff;
+                  classDef process fill:#007BFF,stroke:#fff,stroke-width:2px,color:#fff;
+
+                  class G process;
+                  class H process;
+                  class I success;
+                  class J success;
+                  class K success;
+              </div>
+          </div>
+        </section>
+      </section>
     
     
 

@@ -1,26 +1,28 @@
 
     :root {
-        --primary-color: #ff0000; /* Reines Rot für maximale Sichtbarkeit */
-        --secondary-color: #ffffff; /* Reinweiß für starken Kontrast */
-        --background-color: linear-gradient(135deg, #000000 0%, #000033 100%); /* Tiefes Schwarz mit dunklem Blau */
+        --primary-color: #007ec1; /* Reines Rot für maximale Sichtbarkeit */
+        --secondary-color: #000000; /* Reinweiß für starken Kontrast */
+        --r-background-color: #f8f8f8; /* Tiefes Schwarz mit dunklem Blau */
         --success-color: #00ff00; /* Neon-Grün für klare Unterscheidung */
         --error-color: #ff3300; /* Knalliges Orange-Rot für Fehler */
         --warning-color: #ffcc00; /* Helles Gelb für Warnungen */
         --highlight-color: #00ffff; /* Cyan für zusätzliche Hervorhebungen */
-        --accent-color: #ff00ff; /* Magenta für Kontrast-Elemente */    
+        --accent-color: #ff00ff; /* Magenta für Kontrast-Elemente */
+        --r-heading-font: "Roboto", sans-serif;   
+        --r-main-font: "Roboto", sans-serif;   
       }
 
       body {
         background: var(--background-color);
         color: var(--secondary-color);
-        font-family: "Arial", sans-serif;
+        font-family: "Roboto", sans-serif;
         margin: 0;
         padding: 0;
       }
 
       .reveal section h2 {
         color: var(--primary-color);
-        text-shadow: 0px 2px 3px #ff0000;
+        text-shadow: 0px 2px 3px #00406e;
         /* Leichter Glow */
         font-size: 1.5em;
       }
@@ -55,7 +57,6 @@
         align-items: center;
         padding: 20px;
         box-sizing: border-box;
-        background-color: rgba(0, 0, 0, 0.318);
         /* Leicht abgesetzter Hintergrund */
         border-radius: 10px;
       }
@@ -100,13 +101,13 @@
       }
 
       .slide-text h3 {
-        color: #ff0000;
+        color: #00406e;
         font-size: 0.9em;
         margin-bottom: 10px;
       }
 
       .slide-text p {
-        color: white;
+        color: black;
         font-size: 0.7em;
         line-height: 1;
       }
@@ -117,7 +118,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        background: #ff0000;
+        background: #00406e;
         color: white;
         border: none;
         padding: 12px 16px;
@@ -129,8 +130,8 @@
 
       .prev:hover,
       .next:hover {
-        background: #ff0000;
-        box-shadow: 0px 4px 10px rgba(230, 57, 71, 0.805);
+        background: #00406e;
+        box-shadow: 0px 4px 10px #00406e;
       }
 
       .prev {
@@ -147,7 +148,7 @@
         padding: 40px 20px;
         background: #2b131300;
         /* Dunkler Hintergrund */
-        color: white;
+        color: black;
         max-width: 100%;
         /* Stellt sicher, dass nichts über die Folie hinausgeht */
       }
@@ -172,7 +173,7 @@
 
       /* Einzelne Partner-Box */
       .partner {
-        background: rgba(255, 255, 255, 0.384);
+        background: rgb(255, 255, 255);
         padding: 10px;
         border-radius: 10px;
         display: flex;
@@ -191,7 +192,7 @@
       /* Hover-Effekt */
       .partner:hover {
         transform: translateY(-5px);
-        box-shadow: 0px 8px 15px rgba(255, 255, 255, 0.719);
+        box-shadow: 0px 8px 15px rgba(135, 177, 205, 0.719);
       }
 
       /* Logos in der Box */
@@ -212,8 +213,8 @@
       .links {
         text-align: center;
         padding: 20px 20px;
-        background: #140a0a7b; /* Dunkler Hintergrund */
-        color: #ff0000;
+        background: white; /* Dunkler Hintergrund */
+        color: #00406e;
         max-width: 100%; /* Stellt sicher, dass nichts über die Folie hinausgeht */
     }
     
@@ -339,11 +340,13 @@
 }
 /* Ansprechpartner-Bereich oberhalb der Kontakte */
 .ansprechpartner {
+  color: black; 
   margin-top: 1em;
 }
 
 /* Überschrift für den Ansprechpartner-Bereich */
 .ansprechpartner h3 {
+  color: black; 
   margin-bottom: 1em;
   font-size: 1.0em;
   text-align: center;
@@ -382,8 +385,10 @@
 .contact h4 {
   margin: 0.5em 0 0.2em;
   font-size: 0.6em;
+  color: black; 
 }
 .ansprechpartner h3 {
+  color: black; 
   margin: 0.2em 0 0.2em;
   font-size: 0.7em;
 }
@@ -433,13 +438,13 @@
 .social-icons a,
 .forum-icons a {
   font-size: 3rem;
-  color: #fbf7f7;
+  color: #000000;
   text-decoration: none;
   transition: color 0.3s;
 }
 .social-icons a:hover,
 .forum-icons a:hover {
-  color: #8a1616;
+  color: #00406e;
 }
 
 i.fab {

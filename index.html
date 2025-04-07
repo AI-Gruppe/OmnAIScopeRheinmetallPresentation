@@ -29,9 +29,9 @@
           </section>
           <!-- Kapitel: Oszilloskope früher: -->
           <section>
-            <section>
+            <section  data-background-video="videos/OsziVideo.mp4">
               <h2>1897 erfunden – aber kaum genutzt ?</h2>
-              <p>
+              <p style="color: white;">
                 Die Herausforderungen der Oszilloskopdiagnose
               </p>
             </section>
@@ -269,103 +269,87 @@
             <img src="images/TechDatenOmnAI.png" />
           </section>
         </section>
-
-        <!-- Wie sich das OmnAIScope auf die Fahrzeuganalyse auswirkt: -->
         <section>
-          <section>
-            <h2>Das OmnAIScope als Fahrzeugdiagnosetool</h2>
-          </section>
+            <!-- Folie 1: Einleitung -->
+  <section class="drosselklappen-section" data-background-video="videos/BackgroundDrosselklappe.mp4">
+    <h2>Drosselklappen-Diagnose mit dem Oszilloskop</h2>
+    <p class="intro-text">
+      Klare Signalformen für weniger Kosten 
+    </p>
+  </section>
+  <section class="drosselklappen-section">
+    <h3>Diagnoselücke: Symptome erkannt, Ursache verborgen</h3>
+    <ul class="key-points">
+      <li>OBD-Diagnose bleibt oberflächlich: Nur Fehlercodes</li>
+      <li>Elektrische Anomalien (z. B. Spannungssprünge) werden nicht erfasst</li>
+      <li>Oszilloskop: Ursachenfindung in Echtzeit</li>
+    </ul>    
+    <h4 style="color:red; font-size:2rem; "> Teiletausch reduzieren, Geld sparen</h4>
+  </section>
 
-          <section>
-            <h2>Das Werkstattkonzept</h2>
-            <div
-              style="
-                width: 100%;
-                height: 400px;
-                overflow: auto;
-                border: 1px solid #ccc;
-                padding: 10px;
-                background: #f8f9fa;
-              "
-            >
-              <div class="mermaid">
-                graph TD; OmnAIScopes --> Server; Server -.-> Datenanzeige;
-                Server -.-> Speicher; Server -.-> Analyse; Analyse -.->
-                Datenanzeige; Datenanzeige -.-> Server;
-              </div>
-            </div>
-          </section>
-          <section>
-            <h2>Funktionalität im Prerelease</h2>
-            <ul>
-              <li>Kompakt & mobil</li>
-              <li>Einfache Bedienung</li>
-              <li>Automatische Datenerfassung</li>
-              <li>Steuerung per Laptop/Tablet</li>
-            </ul>
-          </section>
+    <!-- Folie 2: Diagnoseschritte -->
 
-          <section>
-            <h2>Die Zielgruppe im Prerelease</h2>
-            <ul>
-              <li>👨‍🔧 Werkstattmitarbeiter mit Oszilloskoperfahrung</li>
-              <li> Auszubildende in KFZ-Betrieben</li>
-              <li> Berufsschulen </li>
-            </ul>
-          </section>
+  <section class="drosselklappen-section">
+  <h3>Diagnoseschritt 1</h3>
+  <p class="step-text">Versorgungsspannung prüfen</p>
+  </section>
+  <section class="drosselklappen-section">
+      <h3>Diagnoseschritt 2</h3>
+      <p class="step-text">Signal am Drosselklappenstecker abgreifen</p>
+      <img src="images/BepinnungDrosselklappe.jpg" class="drosselklappen-img">
+    </section>
 
-          <section>
-            <h2>Der Release des OmnAIScopes</h2>
-            <p>Funktionalitätserweiterung im nächsten Jahr:</p>
-            <ul>
-              <li>📱 <strong>Mobile Steuerung</strong></li>
-              <li>
-                🚗 <strong>Fahrbetrieb-Messungen</strong> – Aufnahmen während
-                der Fahrt
-              </li>
-              <li>💾 <strong>Speicher mit Gutbildern</strong></li>
-              <li>🩺 <strong>Digitale Fahrzeugakte</strong></li>
-              <li>📊 <strong>Einfache Analysen</strong></li>
-            </ul>
-          </section>
+  <!-- Schritt 2 -->
+  <section class="drosselklappen-section">
+    <h3>Diagnoseschritt 3</h3>
+    <p class="step-text">Gaspedal betätigen – Verlauf beobachten</p>
+    <img src="images/DrosselklappenMessungVerlauf.png" class="drosselklappen-img">
+  </section>
 
-          <section>
-            <h2>Zielgruppe des Release:</h2>
-            <ul>
-              <li>
-                🔧 KFZ-Mitarbeiter unabhängig von ihrer Oszilloskoperfahrung
-              </li>
-              <li>Betriebe die reparieren statt austauschen </li>
-              <li>Auszubildende auch schon im ersten Lehrjahr</li>
-              <li>Fachkräfte und Auszubildende im Technikbereich</li>
-            </ul>
-          </section>
-          <section>
-            <h2>Die Zukunft von OmnAIScope</h2>
-            <p>Die langfristige Version</p>
-            <p></p>
-            <ul>
-              <li>📱 <strong>KI gestütze Fahrzeugdiagnose</strong></li>
-              <li>
-                🚗 <strong>Erweiterbare Diagnosegeräte</strong> – Temperatur,
-                EFeld, Vibration: alles über eine Software
-              </li>
-              <li>💾 <strong>Intelligentes Supportsystem</strong></li>
-            </ul>
-          </section>
+  <!-- Schritt 3 -->
+  <section class="drosselklappen-section">
+    <h3>Diagnoseschritt 4</h3>
+    <p class="step-text">Auffälligkeiten wie Sprünge, Hänger, Rauschen erkennen</p>
+  </section>
 
-          <section>
-            <h2>Zielgruppe von OmnAI auf lange Sicht</h2>
-            <ul>
-              <li>🔧 Von erfahrenen KFZ-Schraubern bis zu jungen Azubis</li>
-              <li> Hobbyschrauber, Hobbybastler, Besitzer eines Kraftfahrzeugs</li>
-              <li>
-                Die Fahrzeugdiagnose ist nun für jeden einfach, günstig und
-                machbar
-              </li>
-            </ul>
-          </section>
-        </section>
+  <!-- Schritt 4 -->
+  <section class="drosselklappen-section">
+    <h3>Diagnoseschritt 5</h3>
+    <p class="step-text">Mit Referenz aus dem Diagnose-Guide abgleichen</p>
+    <img src="images//DiagnoseGuideDrosselklappe.png" class="drosselklappen-img">
+  </section>
+
+  <!-- Folie 3: Typische Fehlerbilder -->
+  <section class="drosselklappen-section">
+    <h3>Mögliche Fehlerbilder</h3>
+    <ul class="result">
+      <li>Schleifer- oder Leiterbahnprobleme</li>
+      <li>Defekte Rückstellmechanik</li>
+      <li>Fehlende Versorgungsspannung</li>
+      <li>Kabelbruch oder Masseproblem</li>
+    </ul>
+  </section>
+
+  <!-- Folie 4: Werkstattvorteile -->
+  <section class="drosselklappen-section">
+    <h3>Vorteile für die Werkstatt</h3>
+    <ul class="benefits">
+      <li>Analyse in 10–15 Minuten</li>
+      <li>Keine unnötigen Teiletauschkosten - 400 € pro Teil</li>
+      <li>Mehr Kompetenz gegenüber dem Kunden</li>
+    </ul>
+  </section>
+
+  <!-- Folie 5: Support & Hilfen -->
+  <section class="drosselklappen-section">
+    <h3>Support inklusive</h3>
+    <p>Wir lassen die Werkstatt nicht allein:</p>
+    <ul class="support-box">
+      <li>📘 <a href="https://omnaiscope.auto-intern.de/2025/03/28/drosselklapper-funktion-defekte-diagnose/" target="_blank">Diagnose-Leitfaden mit Praxisbeispielen</a></li>
+      <li>🎥 <a href="https://www.youtube.com/watch?v=DEIN_VIDEO_LINK" target="_blank">YouTube-Anleitungsvideo</a></li>
+    </ul>
+  </section>
+</section>
         <!--<section>
           <h2>Das OmnAIScope im Einsatz</h2>
           <div class="slider-container">
@@ -401,7 +385,7 @@
           </div>
         </section>-->
         <section>
-          <section>
+          <section data-background-video="videos/BackgroundSocialSection.mp4">
             <h2> Das OmnAIScope Netzwerk</h2>
           </section>
           <section>
@@ -610,6 +594,102 @@
                   class K success;
               </div>
           </div>
+        </section>
+      </section>
+       <!-- Wie sich das OmnAIScope auf die Fahrzeuganalyse auswirkt: -->
+       <section>
+        <section>
+          <h2>Das OmnAIScope als Fahrzeugdiagnosetool</h2>
+        </section>
+
+        <section>
+          <h2>Das Werkstattkonzept</h2>
+          <div
+            style="
+              width: 100%;
+              height: 400px;
+              overflow: auto;
+              border: 1px solid #ccc;
+              padding: 10px;
+              background: #f8f9fa;
+            "
+          >
+            <div class="mermaid">
+              graph TD; OmnAIScopes --> Server; Server -.-> Datenanzeige;
+              Server -.-> Speicher; Server -.-> Analyse; Analyse -.->
+              Datenanzeige; Datenanzeige -.-> Server;
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Funktionalität im Prerelease</h2>
+          <ul>
+            <li>Kompakt & mobil</li>
+            <li>Einfache Bedienung</li>
+            <li>Automatische Datenerfassung</li>
+            <li>Steuerung per Laptop/Tablet</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Die Zielgruppe im Prerelease</h2>
+          <ul>
+            <li>👨‍🔧 Werkstattmitarbeiter mit Oszilloskoperfahrung</li>
+            <li> Auszubildende in KFZ-Betrieben</li>
+            <li> Berufsschulen </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Der Release des OmnAIScopes</h2>
+          <p>Funktionalitätserweiterung im nächsten Jahr:</p>
+          <ul>
+            <li>📱 <strong>Mobile Steuerung</strong></li>
+            <li>
+              🚗 <strong>Fahrbetrieb-Messungen</strong> – Aufnahmen während
+              der Fahrt
+            </li>
+            <li>💾 <strong>Speicher mit Gutbildern</strong></li>
+            <li>🩺 <strong>Digitale Fahrzeugakte</strong></li>
+            <li>📊 <strong>Einfache Analysen</strong></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Zielgruppe des Release:</h2>
+          <ul>
+            <li>
+              🔧 KFZ-Mitarbeiter unabhängig von ihrer Oszilloskoperfahrung
+            </li>
+            <li>Betriebe die reparieren statt austauschen </li>
+            <li>Auszubildende auch schon im ersten Lehrjahr</li>
+            <li>Fachkräfte und Auszubildende im Technikbereich</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Die Zukunft von OmnAIScope</h2>
+          <p>Die langfristige Version</p>
+          <p></p>
+          <ul>
+            <li>📱 <strong>KI gestütze Fahrzeugdiagnose</strong></li>
+            <li>
+              🚗 <strong>Erweiterbare Diagnosegeräte</strong> – Temperatur,
+              EFeld, Vibration: alles über eine Software
+            </li>
+            <li>💾 <strong>Intelligentes Supportsystem</strong></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Zielgruppe von OmnAI auf lange Sicht</h2>
+          <ul>
+            <li>🔧 Von erfahrenen KFZ-Schraubern bis zu jungen Azubis</li>
+            <li> Hobbyschrauber, Hobbybastler, Besitzer eines Kraftfahrzeugs</li>
+            <li>
+              Die Fahrzeugdiagnose ist nun für jeden einfach, günstig und
+              machbar
+            </li>
+          </ul>
         </section>
       </section>
     
